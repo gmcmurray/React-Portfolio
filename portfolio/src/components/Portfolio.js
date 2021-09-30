@@ -6,9 +6,16 @@ import clouds from '../assets/images/clouds.jpg';
 import techBlog from '../assets/images/techblog.jpg';
 import codingQuiz from '../assets/images/shakespeare.jpg';
 
+const styles = {
+    sectionStyles: {
+      display: "flex",
+      maxWidth:" 800px"
+    },
+  };
+ 
 function Portfolio(props) {
     return (
-        <div className='portfolio-container'>
+        <div   style={styles.display, styles.maxWidth}  className='portfolio-container'>
             <Work 
                 name='Bike Trails'
                 repoLink='https://github.com/aaroncenteno/wanderpro'

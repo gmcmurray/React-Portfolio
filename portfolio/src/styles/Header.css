@@ -10,3 +10,8 @@
   color: white;
   font-size: 3rem;
 }
+
+.navActive {
+  background-color: white;
+  font-weight: bolder;
+}
