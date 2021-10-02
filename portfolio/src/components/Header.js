@@ -1,12 +1,15 @@
 import React from 'react';
-import {BrowserRouter as Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter as Link} from 'react-router-dom';
 // Here we are importing a CSS file as a dependency
 import '../styles/Header.css';
 const styles = {
   headerContainer:{
     display: "flex",
+    flexDirection:"column",
     justifyContent:"space-around",
-    alignItems:"center"
+    alignItems:"center",
+    maxHeight: "2ev",
+    maxWidth:"96%"
   },
   navActive: {
     backgroundColor: 'white',
@@ -17,6 +20,10 @@ const styles = {
     fontWeight: 'bolder',
     color: 'blue',
     margin:'4px'
+  },
+  h1: {
+    color:"black",
+    fontSize:"1.8em"
   }
 }
 
@@ -24,7 +31,7 @@ function Header(props) {
   const { pages = [], currentPage, setCurrentPage} = props;
   return (
     <header className="header" style={styles.headerContainer}>
-      <h1 className="" >Portfolio gMan</h1>
+      <h1 style={styles.h1} >Portfolio gMan</h1>
       <div className="topnav" id="myTopnav">
         <span
         className={`${currentPage === 'about' && 'navActive'}`}

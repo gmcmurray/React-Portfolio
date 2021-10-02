@@ -1,4 +1,5 @@
 import React from 'react';
+import Email from './Email';
 const styles = {
     sectionStyles: {
       display: "flex",
@@ -10,7 +11,7 @@ function Contact() {
     return (
         <div style={styles.sectionStyles}  className='aboutme-container'>
             <p>  Phone Number  (650) 880-7464</p> 
-            <a href="mailto:gmcmurray1493@gmail.com">Email</a> 
+            <Email />
             <a href="https://www.linkedin.com/in/george-mcmurray/">LinkedIn</a>        
         </div>
     )
