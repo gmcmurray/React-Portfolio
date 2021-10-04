@@ -63,6 +63,15 @@ function Header({  currentPage, handlePageChange} ) {
         </li>
         <li>
           <a
+          href='#Resume'
+          className={currentPage === 'AboutMe' ? 'navActive': 'nav-link'}
+          onClick={(event)=>{event.stopPropagation();handlePageChange('Resume')} }
+          style={styles.aTag}> 
+        Resume
+        </a>
+        </li>
+        <li>
+          <a
           href='#contacts'
           onClick={(event)=>{event.stopPropagation();handlePageChange('Contact')} }
           className={currentPage === 'Contact' ? 'navActive' : 'nav-link'}

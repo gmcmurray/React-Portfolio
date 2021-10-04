@@ -1,6 +1,7 @@
 import React from 'react';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import  myResume  from '../assets/resume.pdf'
  
 const styles = {
     sectionStyles: {
@@ -23,13 +24,25 @@ const styles = {
      font:"20px"
     },
     subtitle:{textDecorationLine: 'underline',
-  fontWeight:'bold'}
+  fontWeight:'bold'},
+
+  download:{
+    border: "solid 2px black",
+    borderRadius: " 10px",
+    background :"lime",
+    padding: "2px"
+  }
   };
  
 function Resume() {
     return (
 <div   style={styles.sectionStyles}  className='resume-container'>
   <h2> About George McMurray </h2>
+ 
+  <div style={styles.download} >
+  <a href={myResume} download='myResume' >Down Load Resume</a>
+  </div>
+  <br></br>
     <div style={styles.sectionContainer}>
       <div style={styles.section}>
       <h3> Coding Experience</h3>
@@ -56,7 +69,7 @@ function Resume() {
       <li> Product and Test Engineering </li>
     </ul> 
 
-    <a href='./Resume.pdf' target='_blank'>Resume</a>
+    
   
     </div>
     <div>

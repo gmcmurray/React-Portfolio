@@ -1,6 +1,13 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs';
-
+const styles = {
+  formContainer:{
+    display: "flex",
+    flexDirection:"column",
+    alignItems:"center",
+    maxHeight: "2ev",
+    maxWidth:"96%"
+  }}
 export const Email = () => {
   const form = useRef();
 
@@ -16,10 +23,10 @@ export const Email = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
+    <form ref={form} onSubmit={sendEmail} style={styles.formContainer}>
+      <label>Your Name</label>
       <input type="text" name="user_name" />
-      <label>Email</label>
+      <label>Your Email</label>
       <input type="email" name="user_email" />
       <label>Message</label>
       <textarea name="message" />
