@@ -5,6 +5,7 @@ import mtBike from '../assets/images/mtbike.jpg';
 import clouds from '../assets/images/clouds.jpg';
 import techBlog from '../assets/images/techblog.jpg';
 import codingQuiz from '../assets/images/shakespeare.jpg';
+import dailyplanner from '../assets/images/dailyplanner.jpg'
 
 const styles = {
     sectionStyles: {
@@ -47,7 +48,7 @@ const styles = {
     boxfour:{
         gridColumnStart:"2",
         gridRowStart:"1",
-        gridRowEnd:"span 3",
+        gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
         margin: "1%",
@@ -55,8 +56,17 @@ const styles = {
     },
     boxfive:{
         gridColumnStart:"2",
-        gridRowStart:"4",
-        gridRowEnd:"span 3",
+        gridRowStart:"3",
+        gridRowEnd:"span 2",
+        justifySelf:"center",
+        alignSelf: "stretch",
+        margin: "1%",
+        maxHeight: "445px"
+    },
+    boxsix:{
+        gridColumnStart:"2",
+        gridRowStart:"5",
+        gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
         margin: "1%",
@@ -109,6 +119,15 @@ function Portfolio(props) {
                     repoLink='https://github.com/gmcmurray/Code-Quiz'
                     liveLink=' https://gmcmurray.github.io/Code-Quiz/'
                     projectImage={codingQuiz}
+                    className='work-item'
+                />
+            </div>
+            <div style={styles.boxsix} >
+                <Work 
+                    name='Day Scheduler'
+                    repoLink='https://github.com/gmcmurray/DayScheduler'
+                    liveLink=' https://gmcmurray.github.io/DayScheduler/'
+                    projectImage={dailyplanner}
                     className='work-item'
                 />
             </div>
