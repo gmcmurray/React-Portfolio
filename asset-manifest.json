@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.6034bdfb.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.05663d5c.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.05663d5c.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.9fbd6762.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.9fbd6762.js.map",
+    "static/js/2.10b1c19b.chunk.js": "/React-Portfolio/static/js/2.10b1c19b.chunk.js",
+    "static/js/2.10b1c19b.chunk.js.map": "/React-Portfolio/static/js/2.10b1c19b.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/main.6034bdfb.chunk.css.map": "/React-Portfolio/static/css/main.6034bdfb.chunk.css.map",
+    "static/js/2.10b1c19b.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.10b1c19b.chunk.js.LICENSE.txt",
+    "static/media/clouds.d13041f0.jpg": "/React-Portfolio/static/media/clouds.d13041f0.jpg",
+    "static/media/dailyplanner.386eaa78.jpg": "/React-Portfolio/static/media/dailyplanner.386eaa78.jpg",
+    "static/media/gMan.01e169bd.jpg": "/React-Portfolio/static/media/gMan.01e169bd.jpg",
+    "static/media/mealplan.b748ef02.jpg": "/React-Portfolio/static/media/mealplan.b748ef02.jpg",
+    "static/media/mtbike.02eed027.jpg": "/React-Portfolio/static/media/mtbike.02eed027.jpg",
+    "static/media/resume.c4d9de31.pdf": "/React-Portfolio/static/media/resume.c4d9de31.pdf",
+    "static/media/shakespeare.948f436a.jpg": "/React-Portfolio/static/media/shakespeare.948f436a.jpg",
+    "static/media/techblog.41009b7b.jpg": "/React-Portfolio/static/media/techblog.41009b7b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fbd6762.js",
+    "static/js/2.10b1c19b.chunk.js",
+    "static/css/main.6034bdfb.chunk.css",
+    "static/js/main.05663d5c.chunk.js"
+  ]
+}
