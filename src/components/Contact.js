@@ -1,5 +1,5 @@
 import React from 'react';
-import Email from './Email'
+import  { ContactForm } from './ContactForm'
 const styles = {
     sectionStyles: {
       display: "grid",
@@ -26,7 +26,7 @@ function Contact() {
             <a href="https://www.linkedin.com/in/george-mcmurray/"><h3> LinkedIn </h3>
            </a>  
            <h3> Leave Message: </h3>
-           <Email />
+           <ContactForm/>
            </div>      
         </div>
     )

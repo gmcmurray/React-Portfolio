@@ -28,59 +28,49 @@ const styles = {
   }
 }
 
-function Header({  currentPage, handlePageChange} ) {
+function Header({ currentPage, handlePageChange }) {
   return (
     <div className="header" style={styles.headerContainer}>
       <h1 style={styles.h1} >Portfolio gMan</h1>
       <ul className="topnav" id="myTopnav">
-        <li>
-          <a
-          href='#home'
-          className={currentPage === 'Home' ? 'navActive' : 'nav-link'}
-          onClick={(event)=>{event.stopPropagation();handlePageChange('Home'); console.log("home")} } 
-          style={styles.aTag} >
-            Home  
-            </a>
 
-        </li>
         <li>
           <a
-          href='#projects'
-          onClick={(event)=>{event.stopPropagation();handlePageChange('p1')}}
-          className={currentPage === 'p1' ? 'navActive' : 'nav-link'}
-          style={styles.aTag} > 
-          Projects  
+            href='#projects'
+            onClick={(event) => { event.stopPropagation(); handlePageChange('p1') }}
+            className={currentPage === 'p1' ? 'navActive' : 'nav-link'}
+            style={styles.aTag} >
+            Projects
           </a>
         </li>
         <li>
           <a
-          href='#AboutMe'
-          className={currentPage === 'AboutMe' ? 'navActive': 'nav-link'}
-          onClick={(event)=>{event.stopPropagation();handlePageChange('AboutMe')} }
-          style={styles.aTag}> 
-        About Me 
-        </a>
+            href='#AboutMe'
+            className={currentPage === 'AboutMe' ? 'navActive' : 'nav-link'}
+            onClick={(event) => { event.stopPropagation(); handlePageChange('AboutMe') }}
+            style={styles.aTag}>
+            About Me
+          </a>
         </li>
         <li>
           <a
-          href='#Resume'
-          className={currentPage === 'AboutMe' ? 'navActive': 'nav-link'}
-          onClick={(event)=>{event.stopPropagation();handlePageChange('Resume')} }
-          style={styles.aTag}> 
-        Resume
-        </a>
+            href='#Resume'
+            className={currentPage === 'Resume' ? 'navActive' : 'nav-link'}
+            onClick={(event) => { event.stopPropagation(); handlePageChange('Resume') }}
+            style={styles.aTag}>
+            Resume
+          </a>
         </li>
         <li>
           <a
-          href='#contacts'
-          onClick={(event)=>{event.stopPropagation();handlePageChange('Contact')} }
-          className={currentPage === 'Contact' ? 'navActive' : 'nav-link'}
-          style={styles.aTag} >  
-         Contact 
-         </a>
+            href='#contacts'
+            onClick={(event) => { event.stopPropagation(); handlePageChange('Contact') }}
+            className={currentPage === 'Contact' ? 'navActive' : 'nav-link'}
+            style={styles.aTag} >
+            Contact
+          </a>
         </li>
-      
-        </ul>
+      </ul>
     </div>
   );
 }

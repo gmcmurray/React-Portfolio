@@ -4,16 +4,13 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
-import Home from './Home';
+ 
 import Footer from './Footer';
 // In our main App component, we are rendering only single instances of Header and Navbar and several instances of Card
 function PortfolioContainer() {
-  // const pages = ['Home','p1','AboutMe', 'Contact','Resume'];
   const [currentPage, setCurrentPage] = useState('p1')
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
+ 
     if (currentPage === 'AboutMe') {
       return <AboutMe />;
     }
