@@ -20,7 +20,7 @@ export const ContactForm = () => {
    console.log('form submitted')
    return (alert('your message has been submitted'))
   }
-  
+
   function handleChange(e){
     e.preventDefault();
     e.stopPropagation();
@@ -76,7 +76,7 @@ export const ContactForm = () => {
       
       <input type="submit" value="Save" />
     </form>
-    Name is : {user.name}
+ 
     </div>
      
   );

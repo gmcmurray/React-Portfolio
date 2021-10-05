@@ -21,7 +21,7 @@ const styles = {
         gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
-        margin: "1%",
+        margin: "5px",
         maxHeight: "295px",
         maxWidth:"300px"
     },
@@ -31,7 +31,7 @@ const styles = {
         gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
-        margin: "1%",
+        margin: "5px",
         maxHeight: "295px",
         maxWidth:"300px"
     },
@@ -41,7 +41,7 @@ const styles = {
         gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
-        margin: "1%",
+        margin: "5px",
         maxHeight: "295px",
         maxWidth:"300px"
     },
@@ -51,7 +51,7 @@ const styles = {
         gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
-        margin: "1%",
+        margin: "5px",
         maxHeight: "445px"
     },
     boxfive:{
@@ -60,7 +60,7 @@ const styles = {
         gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
-        margin: "1%",
+        margin: "5px",
         maxHeight: "445px"
     },
     boxsix:{
@@ -69,7 +69,7 @@ const styles = {
         gridRowEnd:"span 2",
         justifySelf:"center",
         alignSelf: "stretch",
-        margin: "1%",
+        margin: "5px",
         maxHeight: "445px"
     }
   };

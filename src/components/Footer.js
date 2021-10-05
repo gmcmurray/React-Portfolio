@@ -14,15 +14,31 @@ const styles = {
     maxWidth:"96%",
     backGroundColor:"gold"
   },
+  icons:{
+    fontSize: "30px",
+    width: "80px" 
+
+  }
   
 }
 
 function Footer() {
   return (
     <div className="footer" style={styles.footerContainer}>
-     <a href="https://stackoverflow.com/c/mycellium-rising/" target='_blank' rel="noreferrer" ><FontAwesomeIcon icon={faStackOverflow} className="stackoverflow-icon"/>  <i className="fab fa-stack-overflow"></i></a>
-     <a href="https://github.com/gmcmurray/" target='_blank' rel="noreferrer" ><FontAwesomeIcon icon={faGithub} className="github-icon"/></a>
-     <a href="https://www.linkedin.com/in/george-mcmurray/"><FontAwesomeIcon icon={faLinkedin} className="linkedin-icon"/></a>
+     <a  href="https://stackoverflow.com/c/mycellium-rising/" 
+     target='_blank' rel="noreferrer" >
+       <FontAwesomeIcon  icon={faStackOverflow} /> StackOverflow 
+       </a>
+
+     <a href="https://github.com/gmcmurray/" 
+     target='_blank' rel="noreferrer" >
+       <FontAwesomeIcon icon={faGithub} />  Github
+       </a>
+
+     <a href="https://www.linkedin.com/in/george-mcmurray/" 
+     target='_blank' rel="noreferrer"  >
+       <FontAwesomeIcon icon={faLinkedin} /> Linkedin
+       </a>
 
     </div>
   );

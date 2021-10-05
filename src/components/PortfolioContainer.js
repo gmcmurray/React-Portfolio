@@ -4,7 +4,6 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
- 
 import Footer from './Footer';
 // In our main App component, we are rendering only single instances of Header and Navbar and several instances of Card
 function PortfolioContainer() {
