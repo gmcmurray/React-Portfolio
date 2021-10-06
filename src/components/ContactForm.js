@@ -13,7 +13,9 @@ const styles = {
 
 
 export const ContactForm = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({
+    uname:'', email:'',address:'',message:''
+  });
   // const [formErrors, setFormErrors] = useState({});
  const handleSubmit = (e)=>{
    e.preventDefault();
@@ -25,10 +27,10 @@ export const ContactForm = () => {
     e.preventDefault();
     e.stopPropagation();
     const {name, value} = e.target;
-    console.log(name,value)
-    if(minMaxLength(value,1,250)){
-        if(name ==="name"){
-            setUser({...user,name: value})
+    console.log(name, value, user)
+    if(value.trim() !== (null || '')){
+        if(name ==="uname"){
+            setUser({...user,uname: value})
         }
         if(name ==="email"){
           if(validEmail(value)){
@@ -39,40 +41,46 @@ export const ContactForm = () => {
         setUser({...user,address: value})
     }
     if(name ==="message"){
-      if(name){
+
       setUser({...user,message: value})}
-    } }
-    else{ alert("you need to enter a value in each field") }
+   }
+    else { 
+      alert("you need to enter a value in each field") }
   }
 
   return (
     <div>
     <form style={styles.formContainer} onSubmit={handleSubmit}>
       <label>Your Name</label>
-      <input type="text" 
-      value={user.name} 
+      <input type="text"
+      name='uname'
+      value={user.uname} 
       onChange={handleChange}
-      required/>
+      required
+      defaultValue=''/>
       
       <label>Your Email</label>
       <input type="email" 
       value={user.email} 
-      name="user_email" 
+      name="email" 
       onChange={handleChange}
-      required/>
+      required
+      defaultValue=''/>
       
       <label>Your Adress</label>
       <textarea type="address" 
       value={user.address} 
-      name="user_address" 
+      name="address" 
       onChange={handleChange}
-      required/>
+      required
+      defaultValue=''/>
       
       <label>Message</label>
       <textarea name="message" 
       value={user.message} 
       onChange={handleChange}
-      required />
+      required
+      defaultValue='' />
       
       <input type="submit" value="Save" />
     </form>

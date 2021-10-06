@@ -1,7 +1,7 @@
-export function minMaxLength(text, minLength, maxLength) {
+export function minMaxLength(text) {
     let result = true;
-    if(text!=null){ result=(text.length>minLength && text.length<maxLength)}
-    else{result = false}
+    if(text !== null || ""  ){result=true}
+    else if (text === null || ""){result = false}
     return result
 }
  
@@ -10,5 +10,5 @@ export function validEmail(text) {
         /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
       );
      
-    return !regex.test(text);
+    return regex.test(text);
 }
